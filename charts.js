@@ -127,23 +127,23 @@ function buildCharts(sample) {
     var metadata = data.metadata;
     var resultArray = metadata.filter(sampleObj => sampleObj.id ==sample);
     var result = resultArray[0];
-    var wFreq = result.wFreq;   
-   
+    var wfreq = result.wfreq;   
+    
     
     // 4. Create the trace for the gauge chart.
     var trace3 = {
       
       type: "indicator",
       mode: "gauge+number",
-      value: wFreq,
+      value: wfreq,
       title: { text: "<b>Belly Button Washing Frequency</b> <br> Scrubs per Week"},
       gauge: {
         axis: {range: [0,10],tickwidth: 3, tickcolor: "black"},
         bar: {color: "black"},
         steps: [
-          { range: [0, 2], color: "lavender" },
-          { range: [2, 4], color: "paleturquoise" },
-          { range: [4, 6], color: "olivedrab" },
+          { range: [0, 2], color: "lemonchiffon" },
+          { range: [2, 4], color: "lightcoral" },
+          { range: [4, 6], color: "darkgoldenrod" },
           { range: [6, 8], color: "teal" },
           { range: [8, 10], color: "darkblue" },
         ],
