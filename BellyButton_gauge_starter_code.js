@@ -20,17 +20,14 @@ function buildCharts(sample) {
     
 
     // 3. Create a variable that holds the washing frequency.
-    var metadata = data.metadata;
-    var resultArray = metadata.filter(sampleObj => sampleObj.id ==sample);
-    var result = resultArray[0];
-    var wFrq = result.wFreq;   
+      
     // Create the yticks for the bar chart.
     
     // Use Plotly to plot the bar data and layout.
-    Plotly.newPlot();
+    
     
     // Use Plotly to plot the bubble data and layout.
-    Plotly.newPlot();
+  
    
     
     // 4. Create the trace for the gauge chart.
